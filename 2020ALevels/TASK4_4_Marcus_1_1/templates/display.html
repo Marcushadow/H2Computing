@@ -1,0 +1,35 @@
+<html>
+<head>
+    
+    <style>
+        table, th, td , tr{
+            width: 30%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <div>
+
+        <table>
+            
+            <tbody>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Type</th>
+                </tr>
+                {% for row in attr %}
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+        
+    </div>
+</body>
+</html>

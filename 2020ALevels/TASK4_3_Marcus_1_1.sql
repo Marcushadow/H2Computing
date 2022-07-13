@@ -1,0 +1,1 @@
+SELECT Device.SerialNumber, Device.Model, Device.Location, Monitor.DateCleaned FROM Device INNER JOIN Monitor on Device.SerialNumber = Monitor.SerialNumber
