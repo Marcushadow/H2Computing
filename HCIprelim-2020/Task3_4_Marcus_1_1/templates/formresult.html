@@ -1,0 +1,30 @@
+<html>
+    <head>
+      <style>
+        table, tr, th, td {
+          border: 1px solid black;
+        }
+      </style>
+    </head>
+    <body>
+      <div>
+
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+          </tr>
+          {% for item in attr%}
+            <tr>
+              <td>{{item[0]}}</td>
+              <td>{{item[1]}}</td>
+              <td>{{item[2]}}</td>
+            </tr>
+
+          {% endfor %}
+        </table>
+        
+      </div>
+    </body>
+</html>

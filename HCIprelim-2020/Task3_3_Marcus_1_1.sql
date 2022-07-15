@@ -1,0 +1,1 @@
+SELECT Product.ProductCode, Product.Name, Product.Location, Product.Price FROM Product INNER JOIN Cake ON Product.ProductCode = Cake.ProductCode WHERE Cake.Shape = "Circle"
