@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+        body {
+            display: block;
+        }
+            
+        body > *{
+            margin-left: 30px;
+        }
+            
+        table, tr,th, td {
+            border: 1px solid black
+            
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Time</th>
+            </tr>
+        
+            {% for person in attr %}
+            <tr>
+                <td>{{person[0]}}</td>
+                <td>{{person[1]}}</td>
+            </tr>
+            {% endfor %}
+        
+        </table>
+        
+    </body>
+</html>

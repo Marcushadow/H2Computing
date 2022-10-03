@@ -1,0 +1,1 @@
+SELECT competitor.name, SUM(scores.score), SUM(scores.score) > 250 AS 'Qualified' FROM competitor INNER JOIN scores ON competitor.id = scores.id GROUP BY competitor.id

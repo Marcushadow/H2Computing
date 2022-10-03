@@ -1,0 +1,23 @@
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        Upload your portrait image
+        <div>
+            <form action="{{url_for('synthesis')}}" method = "post", enctype="multipart/form-data">
+                Please Enter MatricNo:
+                <br>
+                <input type="text" name="CandidateNo">
+                <br>
+                <input type="file" name = "pfp">
+                <br>
+                <input type="submit">
+                
+            </form>
+            
+        </div>
+    </body>
+    
+</html>

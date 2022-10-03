@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> form</title>
+        
+        <style>
+            div{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            
+            outputs
+            {% for item in attr %}
+                
+                <div>
+                    <h2>{{item[0]}}</h2>
+                    <img src="{{url_for('getFile', filename=item[1])}}">
+                    
+                </div>
+            
+            {% endfor %}
+            
+        </div>
+    </body>
+</html>

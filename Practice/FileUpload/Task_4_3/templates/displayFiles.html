@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            div{
+                padding:1em;
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        <div>
+        {% for item in attr %}
+            {{item[0]}}
+        
+        {% endfor %}
+        
+        </div>
+        
+        <div>
+            <button><a href="{{url_for('main')}}">Main</a></button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<style>
+			table, tr, th, td {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div>
+			
+			<table>
+				<tr>
+					<th>Sender</th>
+					<th>AccessDate</th>
+					<th>App Type</th>
+					<th>Status</th>
+				</tr>
+				
+				{% for entry in attr%}
+	
+					<tr>
+						<td>
+							{{entry[0]}}
+						</td>
+						<td>
+							{{entry[1]}}
+						</td>
+						{% if entry[2] == "WA" %}
+							<td>
+								"WHATSAPP MESSENGER"
+							</td>
+						{% elif entry[2] == "FB" %}
+							<td>
+								"FACEBOOK"
+							</td>
+						{% else %}
+						
+							<td>
+								"SHORT MESSAGING SERVICE"
+							</td>
+						{% endif %}
+						
+						
+						<td>
+							{{entry[3]}}
+						</td>
+
+
+
+					</tr>
+
+				{% endfor %}
+			
+			
+			</table>
+		
+		</div>
+	
+	
+	
+	</body>
+
+</html>

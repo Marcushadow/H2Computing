@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+        
+    </head>
+    
+    <body>
+        <div>
+            <form method="post" action="{{url_for('returnResults')}}" >
+                
+                VIN: 
+                <input type="text" name="VIN">
+                <br>
+                Brand: 
+                <input type="text" name="Brand">
+                <br>
+                
+                Vehicle Type:
+                <select name="VehicleType">
+                    <option value="Sedan" selected>Sedan</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="SUV">SUV</option>
+                    <option value="MPV">MPV</option>
+                </select>
+                <br>
+                Energy Source:
+                <select name="EnergySource">
+                    <option value="Diesel" selected>Diesel</option>
+                    <option value="Gasoline">Gasoline</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Electricity">Electricity</option>
+                </select>
+                <br>
+                Daily Price: 
+                <input type="text" name="DailyPrice">
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> form</title>
+        
+        <style>
+            form{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form action="{{url_for('synthesis')}}" method="post" enctype="multipart/form-data">
+            
+            
+            <input type="file" name="myfile">
+            <br>
+            <input type="text" name="assoc">
+            <br>
+            <input type="submit">
+            
+        </form>
+        
+        
+        <button> <a href = "{{url_for('seeFiles')}}"> View </a></button>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+	<head>
+	
+		<style>
+		
+			table, th, td, tr {
+				border: solid black 1px;
+				border-collapse: collapse;
+			}
+			
+			div{
+				text-align:center;
+			
+			}
+			
+			
+		
+		</style>
+	</head>
+	
+	
+	<body>
+		<div>
+		
+		
+			<table>
+			
+				<tr>
+					<th>Full Naem</th>
+					<th>Screen Anema</th>
+					<th>Identity</th>
+				
+				</tr>
+			
+				{% for persie in attr%}
+					<tr>
+						<td>{{ persie[0] }}</td>
+						<td>{{ persie[1] }}</td>
+						<td>{{ persie[2] }}</td>
+					</tr>
+			
+				{% endfor %}
+			
+			</table>
+		
+			
+		</div>
+	
+	</body>
+
+
+
+
+</html>

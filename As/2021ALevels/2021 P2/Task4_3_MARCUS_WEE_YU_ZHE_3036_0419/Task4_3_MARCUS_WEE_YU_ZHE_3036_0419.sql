@@ -1,0 +1,1 @@
+SELECT competitor.name, ROUND(AVG(scores.score),1) FROM competitor INNER JOIN scores ON competitor.id = scores.id GROUP BY competitor.id

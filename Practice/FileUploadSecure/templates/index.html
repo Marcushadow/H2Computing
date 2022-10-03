@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        Hello World!!
+        
+        
+        <form method="post" enctype="multipart/form-data" action= "{{url_for('synthesis')}}">
+            <input type="text" name = "caption">
+            <br/>
+            <input type="file" name="submittedFile">
+            <br/>
+            
+            <input type="submit">
+            
+            
+        </form>
+        
+        
+        
+        <button> <a href = "{{url_for('seeFiles')}}"> See Files </a> </button>
+    </body>
+</html>

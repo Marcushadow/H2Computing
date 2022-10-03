@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            div{
+                background-color: antiquewhite;
+                padding:1em;
+            }
+            form > *{
+                width: 80%;
+                margin:auto;
+            }
+            .filler{
+                height: 0;
+                padding: 0;
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        
+        Hello World!!
+        
+        <div>
+            <form action="{{url_for('synthesis')}}" enctype="multipart/form-data" method = post>
+                
+                <br>
+                <div>
+                    Select a file:
+                    <input type = "file" name="uploaded">
+                </div>
+                
+                <div class="filler">
+                    
+                    
+                </div>
+                <br>
+                <div>
+                    Enter filename:
+                    <input type = "text" name="filename">
+                </div>
+                
+                <div class="filler">
+                    
+                    
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+                
+            </form>
+            
+        </div>
+        
+        <div>
+            <button><a href="{{url_for('viewFiles')}}">View</a></button>
+        </div>
+        
+    </body>
+</html>

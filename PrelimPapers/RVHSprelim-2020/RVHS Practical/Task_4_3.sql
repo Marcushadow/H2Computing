@@ -1,0 +1,1 @@
+SELECT Student.Class, Student.IndexNo FROM Student INNER JOIN Vote ON Student.MatricNo = Vote.MatricNo INNER JOIN Candidate ON Candidate.CandidateNo = Vote.CandidateNo WHERE Candidate.Name = "Ee Pei Chi Neoma" AND Student.MatricNo LIKE "%-2020%" ORDER BY Student.Class ASC, Student.IndexNo ASC;

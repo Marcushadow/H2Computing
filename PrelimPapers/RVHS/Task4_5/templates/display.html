@@ -1,0 +1,35 @@
+
+
+<html>
+    
+    <head>
+        <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            
+        }
+        </style>
+    </head>
+    <body>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Count</th>
+            </tr>
+        
+            {% for item in attr %}
+            <tr>
+                <td><a href = '{{url_for("findTeacher", name=item[0])}}'>{{item[0]}}</a></td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+            </tr>
+            
+            {% endfor %}
+        
+        </table>
+        
+        
+    </body>
+</html>

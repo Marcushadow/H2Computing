@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+        body {
+            display: block;
+        }
+            
+        body > *{
+            margin-left: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div>{% if msg %} {{msg}} {% endif %}</div>
+        
+        
+        <h1>Form</h1>
+    
+        <form method="post" action="{{url_for('synthesis')}}" >
+            VisitorID:
+            <input type="text" name="VisitorID">
+            
+            Direction:
+            <select name="Direction">
+                <option value="entry">Entry</option>
+                <option value="entry">Exit</option>
+            </select>
+            
+            <input type="submit">
+        </form>
+        
+        
+    </body>
+</html>

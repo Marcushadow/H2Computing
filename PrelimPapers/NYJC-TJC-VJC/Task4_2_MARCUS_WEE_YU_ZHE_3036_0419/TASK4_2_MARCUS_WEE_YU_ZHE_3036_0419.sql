@@ -1,0 +1,1 @@
+SELECT Person.Name, Record.`Time` FROM Person INNER JOIN Record ON Person.id = Record.visitorId ORDER BY Record.`Date` ASC, Record.Time ASC

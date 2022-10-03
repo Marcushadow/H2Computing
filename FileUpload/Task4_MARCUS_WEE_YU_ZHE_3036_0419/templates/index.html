@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            form{
+                display: block;
+                width: 80%;
+                margin: auto;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <h1>Upload your files here</h1>
+        
+        <form method = "post" action="{{url_for('synthesis')}}"  enctype="multipart/form-data">
+            Name:
+            <input type = "text" name = "Name">
+            <br/>
+            <br/>
+            
+            File:
+            <input type = "file" name = "File">
+            <br/>
+            <br/>
+            
+            Caption:
+            <input type = "text" name = "Caption">
+            <br/>
+            <br/>
+            
+            <input type = "submit">
+        
+        </form>
+        
+        <div>
+            <button><a href = "{{url_for('seeFiles')}}"> See files </a></button>
+        
+        </div>
+    </body>
+</html>

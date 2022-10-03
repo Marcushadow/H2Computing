@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <div>All Uploads</div>
+        
+        {% for entry in attr %}
+            
+        <img src="{{url_for('getFile', filename=entry[1])}}">
+        <br/>
+        
+        <p>{{entry[0]}}</p>
+        
+        <hr/>
+        
+        {% endfor %}
+        
+    </body>
+</html>
