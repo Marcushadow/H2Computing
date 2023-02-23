@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            table, tr, th,td {
+                border: 1px solid black;
+            }
+        
+        </style>
+    
+    </head>
+    <body>
+        <h1>All books</h1>
+        
+        <table>
+            <tr>
+                <th>bookID</th>
+                <th>title</th>
+                <th>price</th>
+                <th>copies</th>
+            </tr>
+            
+            {% for item in attr %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+            </tr>
+        
+            {% endfor %}
+        </table>
+        
+        
+        <button><a href="{{url_for('main')}}">Back</a></button>
+    </body>
+
+
+</html>

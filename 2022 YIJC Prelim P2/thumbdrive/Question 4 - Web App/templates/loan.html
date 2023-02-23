@@ -1,0 +1,46 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Loan Sports Equipment</h1>
+        
+        
+        <form method="post" action="{{url_for('synthesis')}}">
+            Name:
+            <select name="name">
+                {% for name in names%}
+                
+                <option value = "{{name}}">{{name}}</option>
+                
+                {% endfor %}
+                
+            </select>
+            
+            <br>
+            Item
+            <select name="item">
+                {% for item in items%}
+                
+                <option value = "{{item}}">{{item}}</option>
+                
+                {% endfor %}
+                
+            </select>
+            
+            <br>
+            Quantity:
+            <input type="text" name="quantity">
+            <br>
+            
+            Start Date:
+            <input type="text" name="startDate">
+            <br>
+            <input type="submit">
+        
+        </form>
+        
+        <button><a href="{{url_for('main')}}">Back</a></button>
+    
+    </body>
+
+</html>

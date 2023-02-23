@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Leaderboard</h1>
+        
+        
+        <div>
+            Your points: {{points}}
+        </div>
+        
+        <table>
+            <tr>
+                <th>
+                    Name:
+                </th>
+                <th>
+                    Total Points:
+                </th>
+            </tr>          
+            
+            {% for row in attr %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+            </tr>
+
+            {% endfor %}
+            
+            
+        </table>
+        
+        
+        <button><a href="{{url_for('main')}}">Back</a></button>
+    
+    </body>
+
+</html>

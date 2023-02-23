@@ -1,0 +1,12 @@
+Smith
+12 14 7 10
+Wing Yip
+12 13 16 17
+Zen Wei
+11 18 20 15
+Asher Ng
+10 13 19 20
+Jun Kai
+16 15 20 23
+Ms Yu
+14 15 19 23

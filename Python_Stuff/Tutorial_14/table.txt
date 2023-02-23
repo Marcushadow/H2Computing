@@ -1,0 +1,13 @@
+Home
+Month 10: October
+ERROR
+Invalid Month
+It's normal
+It's hot
+ERROR
+Hello, world!
+Hello, worLD!
+ERROR
+Hello, Mei Yi!
+Hello!
+You are using GET
